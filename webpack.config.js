@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
+    clean:true
   },
   devServer:{
     static:{
@@ -31,7 +32,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
-   MiniCssExtractPlugin()
+   new MiniCssExtractPlugin()
   ],
   
 };
